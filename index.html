@@ -8,7 +8,7 @@
         body { font-family: Arial; background: #1a1a2e; color: white; padding: 20px; }
         .container { max-width: 800px; margin: auto; }
         .header { background: #16213e; border-radius: 15px; padding: 25px; text-align: center; }
-        .status { display: inline-block; padding: 8px 20px; border-radius: 20px; background: #00ff00; }
+        .status { display: inline-block; padding: 8px 20px; border-radius: 20px; background: #ff0000; }
         .stats { display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; margin: 20px 0; }
         .stat-card { background: #16213e; border-radius: 10px; padding: 20px; text-align: center; }
         .stat-value { font-size: 1.8em; font-weight: bold; }
@@ -23,18 +23,18 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1>🏆 SurvivorHallOfFamer</h1>
-            <div class="status">PROFITABLE</div>
-            <p>Updated: 2026-09-08 12:50:00</p>
+            <h1>🏆 SurvivorHallOfFamer V5</h1>
+            <div class="status">IN DRAWDOWN</div>
+            <p>Updated: 2026-09-08 12:54:28</p>
         </div>
         <div class="stats">
             <div class="stat-card">
                 <div>💰 Balance</div>
-                <div class="stat-value">$1000.00</div>
+                <div class="stat-value">$999.14</div>
             </div>
             <div class="stat-card">
                 <div>📈 Today's P&L</div>
-                <div class="stat-value positive">$0.00</div>
+                <div class="stat-value negative">$-0.86</div>
             </div>
             <div class="stat-card">
                 <div>🔄 Trades Today</div>
@@ -42,12 +42,43 @@
             </div>
             <div class="stat-card">
                 <div>📌 Positions</div>
-                <div class="stat-value">0</div>
+                <div class="stat-value">3</div>
+            </div>
+            <div class="stat-card">
+                <div>🔥 Win Streak</div>
+                <div class="stat-value positive">0</div>
+            </div>
+            <div class="stat-card">
+                <div>⚠️ Loss Streak</div>
+                <div class="stat-value negative">0</div>
+            </div>
+            <div class="stat-card">
+                <div>🎯 Current Risk</div>
+                <div class="stat-value">0.80%</div>
+            </div>
+            <div class="stat-card">
+                <div>📊 Risk Multiplier</div>
+                <div class="stat-value">1.0x</div>
             </div>
         </div>
         <div class="section">
             <h2>Open Positions</h2>
-            <p>No open positions</p>
+            
+                    <div class="position-item">
+                        <div><strong>ATOM/USDT</strong></div>
+                        <div>Entry: $1.6416 | Current: $1.6381</div>
+                        <div class="loss">-0.21%</div>
+                    </div>
+                    <div class="position-item">
+                        <div><strong>ARB/USDT</strong></div>
+                        <div>Entry: $0.1711 | Current: $0.1707</div>
+                        <div class="loss">-0.23%</div>
+                    </div>
+                    <div class="position-item">
+                        <div><strong>POL/USDT</strong></div>
+                        <div>Entry: $0.0955 | Current: $0.0955</div>
+                        <div class="profit">+0.00%</div>
+                    </div>
         </div>
     </div>
 </body>
